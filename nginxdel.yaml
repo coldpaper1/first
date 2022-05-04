@@ -1,0 +1,11 @@
+---
+- name: nginxdel
+  hosts: all
+  become: yes
+
+  tasts:
+  - name: nginxdelele
+    yum:
+      name: nginx
+      state: absent
+
