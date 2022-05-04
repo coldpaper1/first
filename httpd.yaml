@@ -9,6 +9,12 @@
       name: httpd
       state: present
 
+  - name: get_grl
+    get_url: url=www.sk.com dest=/var/www/html/index.html
+    
+
+
+
   - name: start!!!
       service:
         name: httpd
